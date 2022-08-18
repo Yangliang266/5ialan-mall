@@ -1,4 +1,4 @@
-package com.alan.mall.service.user.provider.starter;
+package com.alan.mall.service.user.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
