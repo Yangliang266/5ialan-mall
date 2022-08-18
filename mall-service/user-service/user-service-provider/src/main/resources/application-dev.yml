@@ -1,37 +1,37 @@
 # 应用名称
 spring:
-  main:
-    web-application-type: none
-  application:
-    name: user-service-provider
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://5ialan.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
-    username: root
-    password: root
-    hikari:
-      max-lifetime: 500000
-  cloud:
-    nacos:
-      discovery:
-        username: nacos
-        password: nacos
-        server-addr: 5ialan.com:8848
-        namespace: public
-  redis:
-    host: 5ialan.com:6379
-    timeout: 10000
-#    retryAttempts: 3
-#    retryInterval: 1500
-#    IdleConnectionTimeout: 10000
+   main:
+      web-application-type: none
+   application:
+      name: user-service-provider
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://5ialan.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+      username: root
+      password: root
+      hikari:
+         max-lifetime: 500000
+   cloud:
+      nacos:
+         discovery:
+            username: nacos
+            password: nacos
+            server-addr: 5ialan.com:8848
+            namespace: public
+   redis:
+      host: 5ialan.com:6379
+      timeout: 10000
+   #    retryAttempts: 3
+   #    retryInterval: 1500
+   #    IdleConnectionTimeout: 10000
 
-  cache:
-    type: redis #缓存类型
-    redis:
-      time-to-live: 3600000 #存活时间(毫秒)
-      #key-prefix: CACHE_ #key前缀，默认使用缓存的名字作为前缀
-      #use-key-prefix: true #是否使用前缀
-      cache-null-values: true #是否缓存空值，防止缓存穿透
+   cache:
+      type: redis #缓存类型
+      redis:
+         time-to-live: 3600000 #存活时间(毫秒)
+         #key-prefix: CACHE_ #key前缀，默认使用缓存的名字作为前缀
+         #use-key-prefix: true #是否使用前缀
+         cache-null-values: true #是否缓存空值，防止缓存穿透
 #  cache:
 #    type: redis
 #    redis:
@@ -41,16 +41,16 @@ spring:
 
 
 dubbo:
-  protocol:
-    id: dubbo
-    name: dubbo
-    port: -1
-  cloud:
-    subscribed-services: user-service-provider
-  scan:
-    base-packages: com.alan.mall.service.user.provider
-  provider:
-    timeout: 10000
+   protocol:
+      id: dubbo
+      name: dubbo
+      port: -1
+   cloud:
+      subscribed-services: user-service-provider
+   scan:
+      base-packages: com.alan.mall.service.user.provider
+   provider:
+      timeout: 10000
 
 
 
@@ -58,7 +58,7 @@ dubbo:
 #指定Mybatis的Mapper文件 classpath:mappers/*xml
 mybatis:
    mapper-locations: classpath:com/alan/mall/service/user/provider/dal/mapper/*Mapper.xml
-#指定Mybatis的实体目录
+   #指定Mybatis的实体目录
    type-aliases-package: com.alan.mall.service.user.provider.dal.entitys
 #server:
 #  port: 8088
