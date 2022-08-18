@@ -10,7 +10,7 @@ spring:
         server-addr: 5ialan.com:8848
         namespace: public
 
-# 应用服务 WEB 访问端口
+# 应用服务 WEB 访问端口 ok
 server:
   port: 8887
 
