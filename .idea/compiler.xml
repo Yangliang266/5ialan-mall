@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mall-portal-user" />
+        <module name="swagger3" />
+        <module name="user-service-api" />
+        <module name="mall-portal-shop" />
+        <module name="starter-mall-redisson" />
+        <module name="swagger-json" />
+        <module name="user-service-provider" />
+        <module name="user-sdk" />
+        <module name="swagger-generator" />
+        <module name="shop-service-api" />
+        <module name="shop-service-provider" />
+        <module name="common-tool" />
+        <module name="common-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring" target="1.8" />
+      <module name="swagger-json" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="5ialan-mall" options="" />
+      <module name="common-core" options="-parameters" />
+      <module name="common-starter" options="-parameters" />
+      <module name="common-tool" options="-parameters" />
+      <module name="mall-common" options="" />
+      <module name="mall-portal" options="" />
+      <module name="mall-portal-shop" options="-parameters" />
+      <module name="mall-portal-user" options="-parameters" />
+      <module name="mall-service" options="" />
+      <module name="shop-service" options="-parameters" />
+      <module name="shop-service-api" options="-parameters" />
+      <module name="shop-service-provider" options="-parameters" />
+      <module name="spring" options="-parameters" />
+      <module name="springdoc-openapi" options="" />
+      <module name="starter-mall-redisson" options="-parameters" />
+      <module name="swagger3" options="-parameters" />
+      <module name="user-sdk" options="-parameters" />
+      <module name="user-service" options="" />
+      <module name="user-service-api" options="-parameters" />
+      <module name="user-service-provider" options="-parameters" />
+    </option>
+  </component>
+</project>

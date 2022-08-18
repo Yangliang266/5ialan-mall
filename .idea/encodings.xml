@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mall-common/common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-common/common-starter/starter-mall-redisson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-common/common-tool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-portal/mall-portal-shop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-portal/mall-portal-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/shop-service/shop-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/shop-service/shop-service-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/user-service/user-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/user-service/user-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/user-service/user-service-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdoc-openapi/swagger-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdoc-openapi/swagger-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdoc-openapi/swagger3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdoc-openapi/swagger3/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

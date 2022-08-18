@@ -1,0 +1,547 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "RESTful Swagger API 生成器",
+    "version": "1.0.0",
+    "title": "Swagger 脚本生成器",
+    "termsOfService": "admin",
+    "contact": {
+      "email": "admin"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "tags": [
+        {
+      "name": "TestController",
+      "description": "TestController"
+    },
+    {
+      "name": "TestController",
+      "description": "TestController"
+    },
+    {
+      "name": "TestController",
+      "description": "TestController"
+    },
+    {
+      "name": "TestController",
+      "description": "TestController"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/test": {
+      "get": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "查询所有Test",
+        "description": "查询所有Test方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "添加Test",
+        "description": "添加Test方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Test方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/test/{id}": {
+      "delete": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "根据ID删除Test",
+        "description": "根据ID删除Test方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Test方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "根据ID修改Test",
+        "description": "根据ID修改Test方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test",
+            "description": "传入Test的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "根据ID查询Test",
+        "description": "根据ID查询Test方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Test»"
+            }
+          }
+        }
+      }
+    },
+    "/test/search": {
+      "post": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "不带分页条件搜索Test",
+        "description": "不带分页条件搜索Test方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Test",
+            "description": "传入Test的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test»»"
+            }
+          }
+        }
+      }
+    },
+    "/test/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "分页列表查询Test",
+        "description": "分页列表查询Test方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TestController"
+        ],
+        "summary": "分页条件搜索Test",
+        "description": "分页条件搜索Test方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test",
+            "description": "传入Test的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Test"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test»»"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "RespResult": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "object",
+          "description": "逻辑数据"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«List«Test»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Test"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Test»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Test"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Test": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Test"
+    }
+  },
+  "externalDocs": {
+    "description": "xxxxx",
+    "url": "admin"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis",
+      "type": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.data-base",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.redis.idle-connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": 10000
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties"
+    },
+    {
+      "name": "spring.redis.pool",
+      "type": "com.alan.mall.common.starter.redisson.RedissonPoolProperties",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties"
+    },
+    {
+      "name": "spring.redis.retry-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "spring.redis.retry-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": 1500
+    },
+    {
+      "name": "spring.redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alan.mall.common.starter.redisson.ReddissonProperties",
+      "defaultValue": 3000
+    }
+  ],
+  "hints": []
+}

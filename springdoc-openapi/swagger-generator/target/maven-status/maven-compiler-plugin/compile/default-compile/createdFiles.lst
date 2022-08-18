@@ -1,0 +1,14 @@
+com\alan\mall\swagger\code\build\SwaggerBuilder.class
+com\alan\mall\swagger\code\build\BuilderFactory.class
+com\alan\mall\swagger\code\build\TemplateUtil.class
+com\alan\mall\swagger\code\swagger\SwaggerResponse.class
+com\alan\mall\swagger\SwaggerApplication.class
+com\alan\mall\swagger\code\util\JavaTypes.class
+com\alan\mall\swagger\code\util\StringUtils.class
+com\alan\mall\swagger\code\swagger\SwaggerModel.class
+com\alan\mall\swagger\code\swagger\SwaggerMethod.class
+com\alan\mall\swagger\code\swagger\SwaggerPath.class
+com\alan\mall\swagger\code\build\TemplateBuilder.class
+com\alan\mall\swagger\code\swagger\SwaggerParameters.class
+com\alan\mall\swagger\code\util\ModelInfo.class
+com\alan\mall\swagger\code\swagger\SwaggerModelProperties.class

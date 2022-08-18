@@ -1,0 +1,51 @@
+# 应用名称
+spring:
+  main:
+    web-application-type: none
+  application:
+    name: shop-service-provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://5ialan.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: root
+    hikari:
+      max-lifetime: 500000
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 5ialan.com:8848
+        namespace: public
+  redis:
+    host: 5ialan.com:6379
+    timeout: 3000
+
+
+dubbo:
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: -1
+  cloud:
+    subscribed-services: shop-service-provider
+  scan:
+    base-packages: com.alan.mall.service.shop.provider
+  provider:
+    timeout: 5000
+
+
+#下面这些内容是为了让MyBatis映射
+#指定Mybatis的Mapper文件 classpath:mappers/*xml
+mybatis:
+   mapper-locations: classpath*:com/alan/mall/service/shop/provider/dal/mapper/*Mapper.xml
+#指定Mybatis的实体目录
+   type-aliases-package: com.alan.mall.service.shop.provider.dal.entitys
+
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

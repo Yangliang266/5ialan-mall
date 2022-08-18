@@ -1,0 +1,35 @@
+# 应用名称
+spring:
+  application:
+    name: mall-portal-user
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 5ialan.com:8848
+        namespace: public
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8886
+
+dubbo:
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: -1
+  cloud:
+    subscribed-services: user-service-provider
+  scan:
+    base-packages: com.alan.mall.portal.user
+  consumer:
+    timeout: 10000
+
+
+springdoc:
+  swagger-ui:
+    enabled: true
+
+user:
+  captchaFlag: true

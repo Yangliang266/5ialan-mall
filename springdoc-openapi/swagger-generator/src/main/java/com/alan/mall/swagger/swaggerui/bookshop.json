@@ -1,0 +1,3582 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "RESTful Swagger API 生成器",
+    "version": "1.0.0",
+    "title": "Swagger 脚本生成器",
+    "termsOfService": "admin",
+    "contact": {
+      "email": "admin"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "tags": [
+        {
+      "name": "BooksController",
+      "description": "BooksController"
+    },
+    {
+      "name": "BooksController",
+      "description": "BooksController"
+    },
+    {
+      "name": "BooksController",
+      "description": "BooksController"
+    },
+    {
+      "name": "BooksController",
+      "description": "BooksController"
+    },
+    {
+      "name": "OrderlistController",
+      "description": "OrderlistController"
+    },
+    {
+      "name": "OrderlistController",
+      "description": "OrderlistController"
+    },
+    {
+      "name": "OrderlistController",
+      "description": "OrderlistController"
+    },
+    {
+      "name": "OrderlistController",
+      "description": "OrderlistController"
+    },
+    {
+      "name": "OrdersController",
+      "description": "OrdersController"
+    },
+    {
+      "name": "OrdersController",
+      "description": "OrdersController"
+    },
+    {
+      "name": "OrdersController",
+      "description": "OrdersController"
+    },
+    {
+      "name": "OrdersController",
+      "description": "OrdersController"
+    },
+    {
+      "name": "TRoleController",
+      "description": "TRoleController"
+    },
+    {
+      "name": "TRoleController",
+      "description": "TRoleController"
+    },
+    {
+      "name": "TRoleController",
+      "description": "TRoleController"
+    },
+    {
+      "name": "TRoleController",
+      "description": "TRoleController"
+    },
+    {
+      "name": "Test1Controller",
+      "description": "Test1Controller"
+    },
+    {
+      "name": "Test1Controller",
+      "description": "Test1Controller"
+    },
+    {
+      "name": "Test1Controller",
+      "description": "Test1Controller"
+    },
+    {
+      "name": "Test1Controller",
+      "description": "Test1Controller"
+    },
+    {
+      "name": "Test2Controller",
+      "description": "Test2Controller"
+    },
+    {
+      "name": "Test2Controller",
+      "description": "Test2Controller"
+    },
+    {
+      "name": "Test2Controller",
+      "description": "Test2Controller"
+    },
+    {
+      "name": "Test2Controller",
+      "description": "Test2Controller"
+    },
+    {
+      "name": "UsersController",
+      "description": "UsersController"
+    },
+    {
+      "name": "UsersController",
+      "description": "UsersController"
+    },
+    {
+      "name": "UsersController",
+      "description": "UsersController"
+    },
+    {
+      "name": "UsersController",
+      "description": "UsersController"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/books": {
+      "get": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "查询所有Books",
+        "description": "查询所有Books方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Books»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "添加Books",
+        "description": "添加Books方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Books方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Books"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/books/{id}": {
+      "delete": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "根据ID删除Books",
+        "description": "根据ID删除Books方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Books方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "根据ID修改Books",
+        "description": "根据ID修改Books方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Books方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Books",
+            "description": "传入Books的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Books"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "根据ID查询Books",
+        "description": "根据ID查询Books方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Books方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Books»"
+            }
+          }
+        }
+      }
+    },
+    "/books/search": {
+      "post": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "不带分页条件搜索Books",
+        "description": "不带分页条件搜索Books方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Books",
+            "description": "传入Books的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Books"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Books»»"
+            }
+          }
+        }
+      }
+    },
+    "/books/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "分页列表查询Books",
+        "description": "分页列表查询Books方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Books»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BooksController"
+        ],
+        "summary": "分页条件搜索Books",
+        "description": "分页条件搜索Books方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Books",
+            "description": "传入Books的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Books"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Books"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Books»»"
+            }
+          }
+        }
+      }
+    },
+    "/orderlist": {
+      "get": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "查询所有Orderlist",
+        "description": "查询所有Orderlist方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orderlist»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "添加Orderlist",
+        "description": "添加Orderlist方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Orderlist方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orderlist"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/orderlist/{id}": {
+      "delete": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "根据ID删除Orderlist",
+        "description": "根据ID删除Orderlist方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Orderlist方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "根据ID修改Orderlist",
+        "description": "根据ID修改Orderlist方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Orderlist方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Orderlist",
+            "description": "传入Orderlist的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orderlist"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "根据ID查询Orderlist",
+        "description": "根据ID查询Orderlist方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Orderlist方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Orderlist»"
+            }
+          }
+        }
+      }
+    },
+    "/orderlist/search": {
+      "post": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "不带分页条件搜索Orderlist",
+        "description": "不带分页条件搜索Orderlist方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Orderlist",
+            "description": "传入Orderlist的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orderlist"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orderlist»»"
+            }
+          }
+        }
+      }
+    },
+    "/orderlist/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "分页列表查询Orderlist",
+        "description": "分页列表查询Orderlist方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orderlist»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrderlistController"
+        ],
+        "summary": "分页条件搜索Orderlist",
+        "description": "分页条件搜索Orderlist方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Orderlist",
+            "description": "传入Orderlist的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orderlist"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Orderlist"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orderlist»»"
+            }
+          }
+        }
+      }
+    },
+    "/orders": {
+      "get": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "查询所有Orders",
+        "description": "查询所有Orders方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orders»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "添加Orders",
+        "description": "添加Orders方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Orders方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orders"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/orders/{id}": {
+      "delete": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "根据ID删除Orders",
+        "description": "根据ID删除Orders方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Orders方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "根据ID修改Orders",
+        "description": "根据ID修改Orders方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Orders方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Orders",
+            "description": "传入Orders的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orders"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "根据ID查询Orders",
+        "description": "根据ID查询Orders方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Orders方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Orders»"
+            }
+          }
+        }
+      }
+    },
+    "/orders/search": {
+      "post": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "不带分页条件搜索Orders",
+        "description": "不带分页条件搜索Orders方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Orders",
+            "description": "传入Orders的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orders"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orders»»"
+            }
+          }
+        }
+      }
+    },
+    "/orders/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "分页列表查询Orders",
+        "description": "分页列表查询Orders方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orders»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrdersController"
+        ],
+        "summary": "分页条件搜索Orders",
+        "description": "分页条件搜索Orders方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Orders",
+            "description": "传入Orders的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Orders"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Orders"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Orders»»"
+            }
+          }
+        }
+      }
+    },
+    "/tRole": {
+      "get": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "查询所有TRole",
+        "description": "查询所有TRole方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«TRole»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "添加TRole",
+        "description": "添加TRole方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加TRole方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/TRole"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/tRole/{id}": {
+      "delete": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "根据ID删除TRole",
+        "description": "根据ID删除TRole方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除TRole方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "根据ID修改TRole",
+        "description": "根据ID修改TRole方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TRole方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TRole",
+            "description": "传入TRole的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TRole"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "根据ID查询TRole",
+        "description": "根据ID查询TRole方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改TRole方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«TRole»"
+            }
+          }
+        }
+      }
+    },
+    "/tRole/search": {
+      "post": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "不带分页条件搜索TRole",
+        "description": "不带分页条件搜索TRole方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "TRole",
+            "description": "传入TRole的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TRole"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«TRole»»"
+            }
+          }
+        }
+      }
+    },
+    "/tRole/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "分页列表查询TRole",
+        "description": "分页列表查询TRole方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«TRole»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TRoleController"
+        ],
+        "summary": "分页条件搜索TRole",
+        "description": "分页条件搜索TRole方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "TRole",
+            "description": "传入TRole的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/TRole"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索TRole"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«TRole»»"
+            }
+          }
+        }
+      }
+    },
+    "/test1": {
+      "get": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "查询所有Test1",
+        "description": "查询所有Test1方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test1»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "添加Test1",
+        "description": "添加Test1方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Test1方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test1"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/test1/{id}": {
+      "delete": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "根据ID删除Test1",
+        "description": "根据ID删除Test1方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Test1方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "根据ID修改Test1",
+        "description": "根据ID修改Test1方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test1方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test1",
+            "description": "传入Test1的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test1"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "根据ID查询Test1",
+        "description": "根据ID查询Test1方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test1方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Test1»"
+            }
+          }
+        }
+      }
+    },
+    "/test1/search": {
+      "post": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "不带分页条件搜索Test1",
+        "description": "不带分页条件搜索Test1方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Test1",
+            "description": "传入Test1的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test1"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test1»»"
+            }
+          }
+        }
+      }
+    },
+    "/test1/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "分页列表查询Test1",
+        "description": "分页列表查询Test1方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test1»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Test1Controller"
+        ],
+        "summary": "分页条件搜索Test1",
+        "description": "分页条件搜索Test1方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test1",
+            "description": "传入Test1的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test1"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Test1"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test1»»"
+            }
+          }
+        }
+      }
+    },
+    "/test2": {
+      "get": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "查询所有Test2",
+        "description": "查询所有Test2方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test2»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "添加Test2",
+        "description": "添加Test2方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Test2方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test2"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/test2/{id}": {
+      "delete": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "根据ID删除Test2",
+        "description": "根据ID删除Test2方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Test2方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "根据ID修改Test2",
+        "description": "根据ID修改Test2方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test2方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test2",
+            "description": "传入Test2的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test2"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "根据ID查询Test2",
+        "description": "根据ID查询Test2方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Test2方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Test2»"
+            }
+          }
+        }
+      }
+    },
+    "/test2/search": {
+      "post": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "不带分页条件搜索Test2",
+        "description": "不带分页条件搜索Test2方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Test2",
+            "description": "传入Test2的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test2"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test2»»"
+            }
+          }
+        }
+      }
+    },
+    "/test2/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "分页列表查询Test2",
+        "description": "分页列表查询Test2方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test2»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Test2Controller"
+        ],
+        "summary": "分页条件搜索Test2",
+        "description": "分页条件搜索Test2方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Test2",
+            "description": "传入Test2的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Test2"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Test2"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Test2»»"
+            }
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "查询所有Users",
+        "description": "查询所有Users方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Users»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "添加Users",
+        "description": "添加Users方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加Users方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "delete": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "根据ID删除Users",
+        "description": "根据ID删除Users方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除Users方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "根据ID修改Users",
+        "description": "根据ID修改Users方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Users方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Users",
+            "description": "传入Users的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "根据ID查询Users",
+        "description": "根据ID查询Users方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改Users方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«Users»"
+            }
+          }
+        }
+      }
+    },
+    "/users/search": {
+      "post": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "不带分页条件搜索Users",
+        "description": "不带分页条件搜索Users方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Users",
+            "description": "传入Users的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Users»»"
+            }
+          }
+        }
+      }
+    },
+    "/users/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "分页列表查询Users",
+        "description": "分页列表查询Users方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Users»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UsersController"
+        ],
+        "summary": "分页条件搜索Users",
+        "description": "分页条件搜索Users方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Users",
+            "description": "传入Users的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索Users"
+            ,
+            "schema": {
+              "$ref": "#/definitions/RespResult«List«Users»»"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "RespResult": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "object",
+          "description": "逻辑数据"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«List«Books»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Books"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Books»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Books"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Books": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "description": ""
+        },
+        "price": {
+          "type": "double",
+          "description": ""
+        },
+        "stock": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "cardName": {
+          "type": "string",
+          "description": ""
+        },
+        "addnum": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        }
+      },
+      "description": "Books"
+    },
+    "RespResult«List«Orderlist»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Orderlist"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Orderlist»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Orderlist"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Orderlist": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "ordersId": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "bookId": {
+          "type": "string",
+          "description": ""
+        },
+        "num": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "money": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Orderlist"
+    },
+    "RespResult«List«Orders»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Orders"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Orders»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Orders"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Orders": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "userId": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "allmoney": {
+          "type": "string",
+          "description": ""
+        },
+        "time": {
+          "type": "string",
+          "description": ""
+        },
+        "state": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Orders"
+    },
+    "RespResult«List«TRole»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/TRole"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«TRole»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/TRole"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "TRole": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "roleName": {
+          "type": "string",
+          "description": ""
+        },
+        "createDate": {
+          "type": "date",
+          "description": ""
+        },
+        "note": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "TRole"
+    },
+    "RespResult«List«Test1»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Test1"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Test1»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Test1"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Test1": {
+      "type": "object",
+      "properties": {
+        "userid": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "description": ""
+        },
+        "passowrd": {
+          "type": "string",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Test1"
+    },
+    "RespResult«List«Test2»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Test2"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Test2»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Test2"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Test2": {
+      "type": "object",
+      "properties": {
+        "openid": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "sex": {
+          "type": "string",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "description": ""
+        },
+        "age": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "testid": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        }
+      },
+      "description": "Test2"
+    },
+    "RespResult«List«Users»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/Users"
+          }
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "RespResult«Users»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,50000:失败"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/Users"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "RespResult"
+    },
+    "Users": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "description": ""
+        },
+        "password": {
+          "type": "string",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Users"
+    }
+  },
+  "externalDocs": {
+    "description": "xxxxx",
+    "url": "admin"
+  }
+}
