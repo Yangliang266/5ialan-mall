@@ -1,5 +1,0 @@
-com\alan\mall\common\starter\redisson\TtlRedisCacheManager.class
-com\alan\mall\common\starter\redisson\ReddissonProperties.class
-META-INF\spring-configuration-metadata.json
-com\alan\mall\common\starter\redisson\RedissonPoolProperties.class
-com\alan\mall\common\starter\redisson\RedissonAutoConfigration.class

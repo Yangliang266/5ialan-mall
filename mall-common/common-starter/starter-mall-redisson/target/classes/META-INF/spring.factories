@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
-com.alan.mall.common.starter.redisson.RedissonAutoConfigration
