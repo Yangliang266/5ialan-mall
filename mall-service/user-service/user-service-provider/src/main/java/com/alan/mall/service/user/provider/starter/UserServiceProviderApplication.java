@@ -1,4 +1,4 @@
-package com.alan.mall.service.user.provider;
+package com.alan.mall.service.user.provider.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,8 +12,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @ComponentScan(basePackages = {
         "com.alan.mall.service.user.provider",
         "com.alan.mall.common.tool",
-        "com.alan.mall.common.core",
-        "com.alan.mall.common.starter.redisson"})
+        "com.alan.mall.common.core"})
 public class UserServiceProviderApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserServiceProviderApplication.class, args);

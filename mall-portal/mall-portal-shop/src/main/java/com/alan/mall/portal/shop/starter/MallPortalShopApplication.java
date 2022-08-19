@@ -1,4 +1,4 @@
-package com.alan.mall.portal.user;
+package com.alan.mall.portal.shop.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,12 +7,13 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @ComponentScan(basePackages = {
-        "com.alan.mall.portal.user",
-        "com.alan.mall.common.core"})
-public class MallUserApplication {
+        "com.alan.mall.portal.shop",
+        "com.alan.mall.common.core",
+        "com.alan.mall.service.user.sdk"})
+public class MallPortalShopApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallUserApplication.class, args);
+        SpringApplication.run(MallPortalShopApplication.class, args);
     }
 
 }

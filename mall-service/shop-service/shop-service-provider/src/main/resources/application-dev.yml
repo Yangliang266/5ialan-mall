@@ -6,7 +6,8 @@ spring:
     name: shop-service-provider
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://5ialan.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+#    url: jdbc:mysql://5ialan.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    url: jdbc:mysql://192.168.0.39:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
     username: root
     password: root
     hikari:
@@ -16,10 +17,12 @@ spring:
       discovery:
         username: nacos
         password: nacos
-        server-addr: 5ialan.com:8848
+#        server-addr: 5ialan.com:8848
+        server-addr: 192.168.0.39:8848
         namespace: public
   redis:
-    host: 5ialan.com:6379
+#    host: 5ialan.com:6379
+    host: 192.168.0.39:6379
     timeout: 3000
 
 

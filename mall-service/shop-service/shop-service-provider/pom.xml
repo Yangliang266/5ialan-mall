@@ -128,9 +128,9 @@
             </resource>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
-                <excludes>
-                    <exclude>/**</exclude>
-                </excludes>
+<!--                <excludes>-->
+<!--                    <exclude>/**</exclude>-->
+<!--                </excludes>-->
             </resource>
         </resources>
     </build>
