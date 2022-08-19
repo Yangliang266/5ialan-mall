@@ -110,12 +110,12 @@
     <snapshotRepository>
       <id>snapshots</id>
       <name>Nexus Snapshot Repository</name>
-      <url>http://5ialan.com:8088/repository/maven-snapshots/</url>
+      <url>http://5ialan.com:8881/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>releases</id>
       <name>Nexus Release Repository</name>
-      <url>http://5ialan.com:8088/repository/maven-releases/</url>
+      <url>http://5ialan.com:8881/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
 
